@@ -1,0 +1,34 @@
+.section-title {
+    margin-bottom: 4rem;
+    .title {
+        font-size: 2.5rem;
+        font-weight: 300;
+        line-height: normal;
+        
+        @include xl-up {
+            font-size: 3.5rem;
+            line-height: 1.7;
+        }
+    }
+    .subtitle {
+        font-size: 1.8rem;
+        font-weight: 300;
+        
+        @include xl-up {
+            font-size: 2rem;
+        }
+    }
+}
+
+#livechat {
+    width: 5rem;
+    height: 5rem;
+    background-color: #57CE63;
+    display: block;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 1020;
+    @include flex-center;
+    border-radius: 50%;
+}

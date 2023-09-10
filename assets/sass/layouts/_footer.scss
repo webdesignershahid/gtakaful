@@ -1,0 +1,52 @@
+/*--------------------------------------------------------------
+# Footer-block
+--------------------------------------------------------------*/
+.gt__footer{
+
+    &_top {
+        padding: 4rem 0;
+        background-color: var(--color__white);
+        .footer-widget {
+            margin: 2rem 0;
+            
+            @include md-up {
+                margin: 3rem 0;
+            }
+            @include lg-up {
+                margin: 5rem 0;
+            }
+            .widget__title {
+                font-size: 1.7rem;
+                font-weight: 600;
+                color: var(--color__theme);
+                margin-bottom: 1.5rem;
+            }
+            .widget__menu {
+                li {
+                    margin: .5rem 0;
+                    
+                    @include lg-down {
+                        border-bottom: .1rem solid #eee;
+                        padding: .5rem 0 .8rem;
+                    }
+                    a {
+                        color: #58595b;
+                        font-size: 1.5rem;
+                        @include transition;
+
+                        &:hover {
+                            color: var(--color__theme);
+                            padding-left: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &_bottom {
+        background-color: var(--color__theme);
+        padding: 1rem 0;
+        font-size: 1.4rem;
+        font-weight: 300;
+    }
+}
